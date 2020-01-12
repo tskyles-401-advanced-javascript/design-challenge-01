@@ -1,12 +1,13 @@
-@import '/styles/core/_reset';
-@import '/styles/core/_base';
-@import '/styles/core/_footer';
-@import '/styles/core/_header';
-@import '/styles/lib/_mixins';
-@import '/styles/lib/_variables';
+@import './core/reset';
+@import './core/_base';
+@import './core/_footer';
+@import './core/_header';
+@import './lib/_mixins';
+@import './lib/_variables';
 
 body {
   background-color: $rootColor;
+  @include flex(column, center, center);
 }
 
 header {
