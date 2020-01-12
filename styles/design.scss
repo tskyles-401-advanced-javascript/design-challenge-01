@@ -5,3 +5,19 @@
 @import '/styles/lib/mixins';
 @import '/styles/lib/variables';
 
+body {
+  background-color: $rootColor;
+}
+
+header {
+  background-color: $accentColor;
+}
+
+main {
+  margin: $space;
+}
+
+footer {
+  background-color: $accentColor;
+}
+
