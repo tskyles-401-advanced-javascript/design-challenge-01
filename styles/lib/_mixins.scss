@@ -1,0 +1,27 @@
+@mixin borderRadius($radius){
+  border-radius: $radius;
+}
+
+@mixin flex($direction, $justify, $align){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin center($direction){
+  @if($direction == horizontal){
+    margin: auto;
+  }
+  @if($direction == verticle){
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin boxShadowBlack($offsetX, $offsetY){
+  box-shadow: $offsetX $offsetY 5px 0px black;
+}
+
