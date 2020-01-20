@@ -2,6 +2,7 @@
 @import './core/_base';
 @import './core/_footer';
 @import './core/_header';
+@import './core/nav';
 @import './lib/_mixins';
 @import './lib/_variables';
 
@@ -24,5 +25,13 @@ p {
 
 footer {
   background-color: $accentColor;
+}
+
+header > nav {
+  @include menu-nav($accentColor, $rootColor);
+}
+
+main > nav {
+  @include main-nav($accentColor, $rootColor);
 }
 
