@@ -1,0 +1,42 @@
+@import '../lib/_variables';
+@import '../lib/_mixins';
+
+@mixin menu-nav($navColor, $buttonColor){
+  nav{
+    margin: 5px;
+    background-color: $navColor;
+  }
+  ul {
+    @include flex(row, space-around, center);
+  }
+  ul > li {
+    display: block;
+    background-color: $buttonColor;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin main-nav($navColor, $buttonColor){
+  nav{
+    margin: 5px;
+    background-color: $navColor;
+  }
+  ul {
+    @include flex(column, center, flex-start);
+  }
+  ul > li {
+    display: block;
+    background-color: $buttonColor;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+  }
+  a {
+    text-decoration: none;
+  }
+}

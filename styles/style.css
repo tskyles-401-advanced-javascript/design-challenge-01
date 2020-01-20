@@ -76,4 +76,46 @@ footer {
   background-color: red;
 }
 
+header > nav nav {
+  margin: 5px;
+  background-color: red;
+}
+header > nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header > nav ul > li {
+  display: block;
+  background-color: white;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+}
+header > nav a {
+  text-decoration: none;
+}
+
+main > nav nav {
+  margin: 5px;
+  background-color: red;
+}
+main > nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main > nav ul > li {
+  display: block;
+  background-color: white;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+}
+main > nav a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

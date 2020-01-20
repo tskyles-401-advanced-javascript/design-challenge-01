@@ -13,7 +13,7 @@
   @if($direction == horizontal){
     margin: auto;
   }
-  @if($direction == verticle){
+  @if($direction == vertical){
     margin: 0;
     position: absolute;
     top: 50%;
@@ -25,4 +25,3 @@
 @mixin boxShadowBlack($offsetX, $offsetY){
   box-shadow: $offsetX $offsetY 5px 0px black;
 }
-
